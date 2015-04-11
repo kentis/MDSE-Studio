@@ -1,0 +1,30 @@
+<!--
+  Copyright (c) 2015, <your name>. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+
+<!-- import polymer-element's definition -->
+<link rel="import" href="../../packages/polymer/polymer.html">
+<link rel="import" href="../../packages/paper_elements/paper_input.html">
+<link rel="import" href="../../packages/paper_elements/paper_item.html">
+<link rel="import" href="../../packages/paper_elements/paper_button.html">
+<link rel="import" href="../../packages/core_elements/core_menu.html">
+
+<polymer-element name="cpn-editor">
+  <template>
+    <style>
+      :host {
+        
+      }
+    </style>
+    <svg id="editor" height="1000" width="1700"> 
+     <defs> 
+      <marker id="markerArrow" markerWidth="13" markerHeight="13" refx="10" refy="6"
+       orient="auto">
+       <path d="M2,2 L2,11 L10,6 L2,2" style="fill: #000000;" />
+      </marker>
+     </defs>
+    </svg>
+  </template>
+  <script type="application/dart" src="cpn_editor.dart"></script>
+</polymer-element>

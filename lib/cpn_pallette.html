@@ -1,0 +1,29 @@
+<!--
+  Copyright (c) 2015, <your name>. All rights reserved. Use of this source code
+  is governed by a BSD-style license that can be found in the LICENSE file.
+-->
+
+<!-- import polymer-element's definition -->
+<link rel="import" href="../../packages/polymer/polymer.html">
+<link rel="import" href="../../packages/paper_elements/paper_input.html">
+<link rel="import" href="../../packages/paper_elements/paper_item.html">
+<link rel="import" href="../../packages/paper_elements/paper_button.html">
+<link rel="import" href="../../packages/core_elements/core_menu.html">
+
+<polymer-element name="cpn-pallette">
+  <template>
+    <style>
+      :host {
+       
+        width: 10%;
+        float: left;
+      }
+    </style>
+    <core-menu class="pull-left">
+      <paper-item id="place">Place</paper-item>
+      <paper-item id="transition">Transition</paper-item>
+      <paper-item id="arc">Arc</paper-item>
+    </core-menu>
+  </template>
+  <script type="application/dart" src="CPNPallette.dart"></script>
+</polymer-element>
