@@ -20,7 +20,7 @@ class CPNPallette extends PolymerElement {
   CPNPallette.created() : super.created();
 
   void reverseText(Event event, Object object, PaperInput target) {
-    reversed = target.value.split('').reversed.join('');
+    //reversed = target.value.split('').reversed.join('');
   }
 
   // Optional lifecycle methods - uncomment if needed.
