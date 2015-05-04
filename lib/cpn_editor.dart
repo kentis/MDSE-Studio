@@ -55,9 +55,9 @@ class CPNEditor extends PolymerElement {
  
     
     svg.onDoubleClick.listen((event) {
-      print("svg doubbleClicked");
-      print(event.target);
-      print(event.target.toString());
+      //print("svg doubbleClicked");
+      //print(event.target);
+      //print(event.target.toString());
       //print(event.target )
       if(CPNPallette.selected() == "place"){ 
         var p = new Place(event.client.x - offset1, event.client.y, svg);
@@ -81,6 +81,7 @@ class CPNEditor extends PolymerElement {
            //print("created arc");
            Arc a = new Arc(from, to, svg);
            arcs.add(a);
+           clicked = null;
         }
       }
     });
