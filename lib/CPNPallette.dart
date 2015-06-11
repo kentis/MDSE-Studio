@@ -12,7 +12,7 @@ import 'package:polymer/polymer.dart';
 @CustomTag('cpn-pallette')
 class CPNPallette extends PolymerElement {
 
-  static String selectedPallette = "place";
+  static String selectedPallette = "";
   
   static String selected() { return selectedPallette; }
   
@@ -46,15 +46,29 @@ class CPNPallette extends PolymerElement {
   ready() {
     super.ready();
     this.shadowRoot.getElementById("place").onClick.listen((event){
+      if(selectedPallette == "place"){
+        selectedPallette == "";
+      } else {
       selectedPallette = "place"; 
+      }
     });
     
     this.shadowRoot.getElementById("transition").onClick.listen((event){
-      selectedPallette = "transition"; 
+      if(selectedPallette == "transition"){
+              selectedPallette == "";
+            } else {
+              selectedPallette = "transition";        
+            }
+       
     });
         
     this.shadowRoot.getElementById("arc").onClick.listen((event){
-      selectedPallette = "arc"; 
+      if(selectedPallette == "arc"){
+              selectedPallette == "";
+            } else {
+              selectedPallette = "arc";         
+            }
+      
     });
         
   }
